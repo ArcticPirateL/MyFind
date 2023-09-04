@@ -14,7 +14,6 @@ pub fn walk_tree(
     matches: &mut Vec<String>,
     flag : usize,
 ) -> Result<(), Box<dyn std::error::Error>> {
-    //如果不是，应该怎么办呢？
     if dir.is_dir() {
         for entry in fs::read_dir(dir)? {
             let entry = entry?;

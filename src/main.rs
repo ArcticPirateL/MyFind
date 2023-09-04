@@ -16,7 +16,6 @@ fn main() {
         eprintln!("使用方式：{} <-v(可选择)> <-display(可选择)> <目标目录数量> <目录1> <目录2>... <正则表达式数量> <表达式1> <表达式2>...",args[0]);
         process::exit(1);
     }
-    //思考一下，如果用户输入的参数太多，应该怎么样？
     let mut flag0 = 0;
     let mut flag1 = 0;
     if args[1] == "-v" {
